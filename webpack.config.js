@@ -76,11 +76,12 @@ module.exports = (env) => {
     },
     plugins: production
       ? [
-          sentryWebpackPlugin({
-            authToken: process.env.SENTRY_AUTH_TOKEN,
-            org: 'neo4j-inc',
-            project: 'neodash',
-          }),
+          // sentryWebpackPlugin({
+          //   authToken: process.env.SENTRY_AUTH_TOKEN,
+          //   org: 'neo4j-inc',
+          //   project: 'neodash',
+          //   telemetry: false
+          // }),
         ]
       : [new ReactRefreshWebpackPlugin(), ...(circularValidation ? [circularPlugin] : [])],
     ignoreWarnings: [/Failed to parse source map/],

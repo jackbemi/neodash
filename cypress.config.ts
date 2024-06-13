@@ -7,7 +7,7 @@ export default defineConfig({
   e2e: {
     experimentalMemoryManagement: true,
     numTestsKeptInMemory: 0,
-    baseUrl: 'http://localhost:3000',
+    baseUrl: 'http://localhost:3030',
     setupNodeEvents(on, config) {
       return require('./cypress/plugins/index.js')(on, config);
     },
