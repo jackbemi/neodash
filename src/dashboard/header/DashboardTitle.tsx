@@ -123,7 +123,7 @@ export const NeoDashboardTitle = ({
         </div>
       ) : !standaloneSettings.standalone /* out of edit mode - if Not Standalone we display the edit button */ ? (
         <div className={'n-flex n-flex-row n-flex-wrap n-justify-between n-items-center'}>
-          <Typography variant='h3'>{dashboardTitle ? dashboardTitle : '(no title)'}</Typography>
+          {/* <Typography variant='h3'>{dashboardTitle ? dashboardTitle : '(no title)'}</Typography>
           <Tooltip title={'Edit'} disableInteractive>
             {editable ? (
               <IconButton
@@ -138,7 +138,7 @@ export const NeoDashboardTitle = ({
             ) : (
               <></>
             )}
-          </Tooltip>
+          </Tooltip> */}
         </div>
       ) : (
         /* if we are in Standalone just title is displayed with no edit button */
