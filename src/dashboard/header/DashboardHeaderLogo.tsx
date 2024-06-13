@@ -6,11 +6,11 @@ import { Typography } from '@neo4j-ndl/react';
 
 await StyleConfig.getInstance();
 
-export const NeoDashboardHeaderLogo = ({ resetApplication }) => {
+export const NeoDashboardHeaderLogo = ({ _resetApplication }) => {
   const content = (
     <div className='n-items-center sm:n-flex md:n-flex-1 n-justify-start'>
-      <a className='n-cursor-pointer'>
-        <img onClick={resetApplication} className='n-h-6 n-w-auto n-m-2' src={DASHBOARD_HEADER_BRAND_LOGO} alt='Logo' />
+      <a href="/" className='n-cursor-pointer'>
+        <img className='n-h-6 n-w-auto n-m-2' style={{width: "326px !important", height: "36.9px !important"}} src={DASHBOARD_HEADER_BRAND_LOGO} alt='Logo' />
       </a>
       {IS_CUSTOM_LOGO ? <></> : <Typography variant='h6'>Labs</Typography>}
     </div>
